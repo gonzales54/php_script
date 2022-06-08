@@ -1,0 +1,201 @@
+@use "media" as m;
+
+$font1: Georgia,'Times New Roman',Times,serif;
+
+main{
+    .section-title{
+        font-size: 2.5em;
+        font-family: $font1;
+        margin-bottom: 3%;
+        display: inline-block;
+    }
+    @include m.mq(sm) {
+        margin-bottom: 5%;
+        font-size:1em;
+    }
+    
+    .mainvisual{
+        height: 100vh;
+        @include m.mq(sm) {
+            height: 80vh;
+        }
+        position:relative;
+        background: url('../img/mountain.png') no-repeat;
+        background-size: cover;
+        div{
+            width: 50%;
+            @include m.mq(md){
+                width: 75%;
+                left:calc(50% - 37.5%);
+            }
+            @include m.mq(sm) {
+                width: 90%;
+                left: calc(50% - 45%);
+            }
+            color: #fff;
+            font-family: $font1;
+            position: absolute;
+            top: 40%;
+            left:calc(50% - 25%);
+            text-align: center;
+            @include m.mq(md){
+                h2{
+                    font-size: 3em;
+                }
+            }
+            @include m.mq(sm){
+                h2 {
+                    font-size: 2em;
+                }
+            }
+            p{
+                font-size: 1em;
+            }
+            @include m.mq(md) {
+                p {
+                    padding: 0 2.5% ;
+                    font-size: 1.5em;
+                }
+            }
+            @include m.mq(sm) {
+                p {
+                    padding: 0 2.5%;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+    .gallery{
+        padding: 5% 0;
+        text-align: center;
+        .tile{
+            width: 75%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            @include m.mq(md) {
+                grid-template-columns: 1fr 1fr;
+            }
+            @include m.mq(sm) {
+                width: 90%;
+                left: calc(50% - 45%);
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .item{
+                img{
+                    width:100%;
+                    height: 200px;
+                    @include m.mq(md) {
+                        height: 150px;
+                    }
+                    @include m.mq(sm) {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        padding: 5% 0 10% 0;
+        text-align: center;
+        .result{
+            font-size: 2.5em;
+            font-family: $font1;
+            @include m.mq(sm) {
+                font-size: 1.5em;
+            }
+        }
+        form{
+            width: 50%;
+            @include m.mq(md){
+                width: 75%;
+            }
+            @include m.mq(sm) {
+                width: 90%;
+            }
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: left;
+            label{
+                margin-bottom: 5px;
+            	font-family: $font1;
+                font-size: 1em;
+            }
+            input{
+                height: 30px;
+                margin: 0 0 3% 0;
+                border: solid rgba($color: #000000, $alpha: .6) 1px;
+            }
+            textarea{
+	   	 		width:100%;
+                margin-bottom: 2em;
+                border: solid rgba($color: #000000, $alpha: .6) 1px;
+    			resize:none;
+            }
+            .btn{
+                width: 30%;
+                margin:auto;
+                padding: 15px 0;
+                font-size: 1em;
+                color:#fff;
+                text-align: center;
+                background-color: rgb(19, 99, 204);
+                font-family: $font1;
+            }
+            .btns{
+                width:100%;
+                display: flex;
+                justify-content: space-between;
+                @include m.mq(sm){
+                    flex-direction: column;
+                }
+                .btn1{
+                    width: 30%;
+                    margin:auto;
+                    padding: 15px 0;
+                    font-size: 1em;
+                    color:#fff;
+                    text-align: center;
+                    background-color: rgb(19, 99, 204);
+                    font-family: $font1;
+                    @include m.mq(sm) {
+                        width:50%;
+                        margin-bottom:30px;
+                    }
+                }
+                .btn2 {
+                    width: 30%;
+                    margin: auto;
+                    padding: 15px 0;
+                    font-size: 1em;
+                    color: #fff;
+                    text-align: center;
+                    background-color: rgb(23, 25, 27);
+                    font-family: $font1;
+                    @include m.mq(sm) {
+                        width: 50%;
+                    }
+                }
+            }
+            h3{
+  				margin-bottom: 20px;
+                font-size: 1.5em;
+                font-family:$font1;
+                @include m.mq(sm) {
+                    font-size: 1.5em;
+                }
+            }
+            p{
+  				margin-bottom: 40px;
+                font-size: 1.25em;
+                font-family:$font1;
+                @include m.mq(sm){
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

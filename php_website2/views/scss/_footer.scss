@@ -1,0 +1,47 @@
+@use "media" as m;
+
+$font1: Georgia,'Times New Roman',Times,serif;
+
+a {
+    display: block;
+}
+
+footer{
+    padding: 2% 0;
+    background: rgba(#000, .8);
+    div{
+        width: 75%;
+        @include m.mq(sm) {
+            width: 90%;
+            flex-direction:column;
+        }
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        font-family: $font1;
+        h3{
+            font-size: 2em;
+            @include m.mq(sm) {
+                text-align: center;
+            }
+        }
+        ul{
+            display: flex;
+            @include m.mq(sm) {
+                justify-content: center;
+            }
+            li{
+                a{
+                    padding: 9.5px 20px;
+                    font-size: 1em;
+                }
+                @include m.mq(sm) {
+                    a{
+                        padding: 23.5px 25px;
+                    }
+                }
+            }
+        }
+    }
+}

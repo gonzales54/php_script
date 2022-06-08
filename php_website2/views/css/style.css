@@ -1,0 +1,330 @@
+a {
+  display: block;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+.header .wrapper {
+  width: 75%;
+  margin: auto;
+  padding: 1.5% 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .header .wrapper {
+    width: 90%;
+    padding: 4% 0;
+    flex-direction: column;
+  }
+  .header .wrapper .title {
+    font-size: 2em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+  }
+  .header .wrapper nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  .header .wrapper nav ul li {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1em;
+  }
+  .header .wrapper nav ul li a {
+    padding: 15px 20px;
+    transition: 0.3s;
+  }
+}
+.header .wrapper .title {
+  font-size: 3em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.header .wrapper nav ul {
+  display: flex;
+}
+.header .wrapper nav ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+}
+.header .wrapper nav ul li a {
+  padding: 23.5px 25px;
+  transition: 0.3s;
+}
+
+main .section-title {
+  font-size: 2.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 3%;
+  display: inline-block;
+}
+@media screen and (max-width: 500px) {
+  main {
+    margin-bottom: 5%;
+    font-size: 1em;
+  }
+}
+main .mainvisual {
+  height: 100vh;
+  position: relative;
+  background: url("../img/mountain.png") no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 500px) {
+  main .mainvisual {
+    height: 80vh;
+  }
+}
+main .mainvisual div {
+  width: 50%;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  main .mainvisual div {
+    width: 75%;
+    left: 12.5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .mainvisual div {
+    width: 90%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .mainvisual div h2 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .mainvisual div h2 {
+    font-size: 2em;
+  }
+}
+main .mainvisual div p {
+  font-size: 1em;
+}
+@media screen and (max-width: 800px) {
+  main .mainvisual div p {
+    padding: 0 2.5%;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .mainvisual div p {
+    padding: 0 2.5%;
+    font-size: 0.8em;
+  }
+}
+main .gallery {
+  padding: 5% 0;
+  text-align: center;
+}
+main .gallery .tile {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 800px) {
+  main .gallery .tile {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .gallery .tile {
+    width: 90%;
+    left: 5%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+main .gallery .tile .item img {
+  width: 100%;
+  height: 200px;
+}
+@media screen and (max-width: 800px) {
+  main .gallery .tile .item img {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .gallery .tile .item img {
+    height: 200px;
+  }
+}
+main .contact {
+  padding: 5% 0 10% 0;
+  text-align: center;
+}
+main .contact .result {
+  font-size: 2.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 500px) {
+  main .contact .result {
+    font-size: 1.5em;
+  }
+}
+main .contact form {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+}
+@media screen and (max-width: 800px) {
+  main .contact form {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .contact form {
+    width: 90%;
+  }
+}
+main .contact form label {
+  margin-bottom: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+}
+main .contact form input {
+  height: 30px;
+  margin: 0 0 3% 0;
+  border: solid rgba(0, 0, 0, 0.6) 1px;
+}
+main .contact form textarea {
+  width: 100%;
+  margin-bottom: 2em;
+  border: solid rgba(0, 0, 0, 0.6) 1px;
+  resize: none;
+}
+main .contact form .btn {
+  width: 30%;
+  margin: auto;
+  padding: 15px 0;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  background-color: #1363cc;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main .contact form .btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  main .contact form .btns {
+    flex-direction: column;
+  }
+}
+main .contact form .btns .btn1 {
+  width: 30%;
+  margin: auto;
+  padding: 15px 0;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  background-color: #1363cc;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 500px) {
+  main .contact form .btns .btn1 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+main .contact form .btns .btn2 {
+  width: 30%;
+  margin: auto;
+  padding: 15px 0;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  background-color: #17191b;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 500px) {
+  main .contact form .btns .btn2 {
+    width: 50%;
+  }
+}
+main .contact form h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 500px) {
+  main .contact form h3 {
+    font-size: 1.5em;
+  }
+}
+main .contact form p {
+  margin-bottom: 40px;
+  font-size: 1.25em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 500px) {
+  main .contact form p {
+    font-size: 1em;
+  }
+}
+
+a {
+  display: block;
+}
+
+footer {
+  padding: 2% 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+footer div {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 500px) {
+  footer div {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+footer div h3 {
+  font-size: 2em;
+}
+@media screen and (max-width: 500px) {
+  footer div h3 {
+    text-align: center;
+  }
+}
+footer div ul {
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  footer div ul {
+    justify-content: center;
+  }
+}
+footer div ul li a {
+  padding: 9.5px 20px;
+  font-size: 1em;
+}
+@media screen and (max-width: 500px) {
+  footer div ul li a {
+    padding: 23.5px 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

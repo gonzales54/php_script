@@ -1,0 +1,65 @@
+@use "media" as m;
+
+$font1: Georgia,'Times New Roman',Times,serif;
+
+a{
+    display: block;
+}
+.header{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    .wrapper{
+        width: 75%;
+        margin: auto;
+        padding:1.5% 0;
+        color:#fff;
+        display: flex;
+        justify-content: space-between;
+        
+        @include m.mq(sm){
+            width: 90%;
+            padding: 4% 0;
+            flex-direction: column;
+            .title {
+                font-size: 2em;
+                font-family: $font1;
+                text-align: center;
+            }
+            
+            nav {
+                ul {
+                    display: flex;
+                    justify-content: center;
+            
+                    li {
+                        font-family: $font1;
+                        font-size: 1em;
+            
+                        a {
+                            padding: 15px 20px;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+        .title{
+            font-size: 3em;
+            font-family: $font1;
+        }
+        nav{
+            ul{
+                display: flex;
+                li{
+                    font-family: $font1;
+                    font-size: 1em;
+                    a{
+                        padding: 23.5px 25px;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
